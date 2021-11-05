@@ -1,0 +1,20 @@
+
+
+
+
+.myQallery{
+    display: flex;
+    width: 50%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-left: 5px;
+}
+
+.sidebar .small-previw{
+    width: 100%;
+    margin-bottom: 5px;
+}
