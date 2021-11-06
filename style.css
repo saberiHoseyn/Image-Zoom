@@ -16,5 +16,9 @@
 
 .sidebar .small-previw{
     width: 100%;
-    margin-bottom: 5px;
+}
+
+.zoom-img{
+    margin-left: 5px;
+    flex-basis: calc(70% - 5px);
 }
