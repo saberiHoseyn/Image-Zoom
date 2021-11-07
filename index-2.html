@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Image</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #myImage{
+            width: 800px;
+            height: 533px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            display: block;
+        }
+
+        .zoom-img-lens{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="./images/image-3.jfif" alt="Image">
+    
+
+    <script src="./script-2.js"></script>
+    <script>
+        objZoom.init("#myImage");
+    </script>
+</body>
+</html>
