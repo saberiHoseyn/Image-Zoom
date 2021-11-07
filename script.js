@@ -28,7 +28,30 @@
                 if(event.target.classList.contains("small-previw")){
                     zoomedImg.style.backgroundImage = `url(${event.target.src})`;
                 }
-            })
+            });
+
+            zoomedImg.addEventListener("mouseenter" , function(){
+                zoomedImg.style.backgroundSize = "300%";
+            });
+
+            zoomedImg.addEventListener("mousemove" , function(event){
+                let dimensionZoomedImg = this.getBoundingClientRect();
+                
+                let x = event.clientX - dimensionZoomedImg.left;
+                let y = event.clientY - dimensionZoomedImg.top;
+                
+
+                x = Math.round((x / dimensionZoomedImg.width)*100)
+                y = Math.round((y / dimensionZoomedImg.height)*100)
+                
+                this.style.backgroundPosition = `${x}% ${y}%`;
+                
+            });
+
+            zoomedImg.addEventListener("mouseleave" , function(){
+                zoomedImg.style.backgroundSize = "cover";
+                this.style.backgroundPosition = "center";
+            });
         }
     });
 
