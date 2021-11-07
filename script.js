@@ -49,7 +49,7 @@
             });
 
             zoomedImg.addEventListener("mouseleave" , function(){
-                zoomedImg.style.backgroundSize = "cover";
+                this.style.backgroundSize = "cover";
                 this.style.backgroundPosition = "center";
             });
         }
