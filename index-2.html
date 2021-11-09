@@ -19,6 +19,15 @@
             display: block;
         }
 
+        #myImage2{
+            width: 800px;
+            height: 540px;
+            position: absolute;
+            top: 8px;
+            left: 830px;
+            display: block;
+        }
+
         .zoom-img-lens{
             position: absolute;
             border: 2px solid red;
@@ -36,11 +45,13 @@
 </head>
 <body>
     <img id="myImage" src="./images/image-1.jfif" alt="Image">
+    <img id="myImage2" src="./images/image-2.jfif" alt="Image">
     
 
     <script src="./script-2.js"></script>
     <script>
         objZoom.init("#myImage");
+        objZoom.init("#myImage2")
     </script>
 </body>
 </html>
